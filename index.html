@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple Website Design</title>
+  <!-- Custom CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <a href="#">ITeach<span>ULearn</span></a>
+      </div>
+      <ul>
+        <li class="list">
+            <a href="F:\IU\Learn\HTML\home.html" target="blank">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+        <h2 id="greeting">Hello,<br>Welcome</h2>
+        <p>Learn a numerous amount of subjects in a swift, simple and effective format<br></p>
+    </div>
+    <div class="link">
+        <a href="#" class="hire">Start</a>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the current hour
+            var currentHour = new Date().getHours();
+
+            // Get the greeting element
+            var greetingElement = document.getElementById("greeting");
+
+            // Change the greeting based on the time of day
+            if (currentHour >= 5 && currentHour < 12) {
+                greetingElement.innerHTML = "Good Morning,<br>Welcome";
+            } else if (currentHour >= 12 && currentHour < 18) {
+                greetingElement.innerHTML = "Good Afternoon,<br>Welcome";
+            } else {
+                greetingElement.innerHTML = "Good Evening,<br>Welcome";
+            }
+        });
+    </script>
+</body>
+</html>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">;
+    </script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">;
+
+</script>
+</div>
+</body>
+</html>
